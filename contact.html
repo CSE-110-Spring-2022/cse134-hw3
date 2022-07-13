@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Shuhang</title>
+    <link rel="icon" type="image/x-icon" href="Media/logo.ico">
 </head>
 <body>
 <header>
     <!-- Shuhang's Logo -->
     <a href="index.html">
-        <img src="logo.png" width="50" height="50">
+        <img src="Media/logo.png" width="50" height="50" alt="Shuhang's Logo">
     </a>
 
     <!-- Navbar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Resume</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="playground.html">Playground</a></li>
         </ul>
     </nav>
 </header>
@@ -51,6 +53,24 @@
                 <option value="Friends">Friends</option>
             </select>
 
+            <br>
+
+            <label for="purpose">How can I help your organization:</label>
+            <select name="purpose" id="purpose">
+                <optgroup label="Internship">
+                    <option value="summer">Summer</option>
+                    <option value="part-time">Part-time</option>
+                </optgroup>
+                <optgroup label="Research">
+                    <option value="researchAssistant">Research Assistant</option>
+                    <option value="researcher">Undergraduate Researcher</option>
+                </optgroup>
+                <optgroup label="Full-time Job">
+                    <option value="softwareDeveloper">Software Developer</option>
+                    <option value="productManager">Product Manager</option>
+                </optgroup>
+            </select>
+
             <br><br>
 
             <label for="message">Message:</label>
@@ -70,8 +90,24 @@
         </fieldset>
 
     </form>
+
+    <br><br>
+
+    <form action="/action_page.php" method="get">
+        <label for="language">Choose your preferred programming language and see my related programming experience:</label>
+        <input list="languages" name="language" id="language">
+        <datalist id="languages">
+            <option value="C++">
+            <option value="Python">
+            <option value="Java">
+            <option value="Html">
+            <option value="JavaScript">
+        </datalist>
+        <button type="button" onclick="alert('My projects are hidden from the public')">Search</button>
+    </form>
 </main>
 <footer>
+    <hr>
     <p>Copyright @Great_Shuhang</p>
 </footer>
 </body>

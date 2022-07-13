@@ -2,22 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <header>
     <!-- Shuhang's Logo -->
     <a href="index.html">
-        <img src="logo.png" width="50" height="50">
+        <img src="Media/logo.png" width="50" height="50" alt="Shuhang's Logo">
     </a>
 
     <!-- Navbar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Resume</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="playground.html">Playground</a></li>
         </ul>
     </nav>
 </header>
@@ -26,6 +33,7 @@
     <b>Here is a quick navigation of the gallery page</b>
     <li><a href="#video">Video</a></li>
     <li><a href="#pitcure">Picture</a></li>
+    <li><a href="#socialMedia">Social Media Account</a></li>
     <br>
     <hr>
 
@@ -33,7 +41,7 @@
         <h2>Please watch the video I made with my DJI Drone</h2>
         <!-- Videos -->
         <video controls>
-            <source src="ucsd.mp4" type="video/mp4">
+            <source src="Media/ucsd.mp4" type="video/mp4">
         </video>
         <p>To watch the video of full <span style="color:blue;font-weight: bold">resolution</span>
         please head to <a href="https://youtu.be/3goq1T45vyA">YouTuBe</a>
@@ -45,19 +53,61 @@
         <!-- Pictures -->
         <h2>Here are the pictures I take</h2>
         <picture>
-            <img src="bridge.jpg" style="width:400px">
-            <img src="cars.jpg" style="width:400px">
-            <img src="cars2.jpg" style="width:400px">
-            <img src="shore.jpg" style="width:400px">
-            <img src="shore2.jpg" style="width:400px">
-            <img src="shore3.jpg" style="width:400px">
-            <img src="sunset.jpg" style="width:400px">
-            <img src="sunset2.jpg" style="width:400px">
+            <table>
+                <tr>
+                    <th><img src="Media/bridge.jpg" style="width:400px" alt="Ellen Browning Scripps Memorial Pier"></th>
+                    <th><img src="Media/cars.jpg" style="width:400px" alt="Night of La Jolla Freeway"></th>
+                    <th><img src="Media/cars2.jpg" style="width:400px" alt="Night of La Jolla Freeway from a Hole"></th>
+                    <th><img src="Media/shore.jpg" style="width:400px" alt="La Jolla Shore"></th>
+                </tr>
+                <tr>
+                    <th><img src="Media/shore2.jpg" style="width:400px" alt="La Jolla Shore"></th>
+                    <th><img src="Media/shore3.jpg" style="width:400px" alt="La Jolla Shore"></th>
+                    <th><img src="Media/sunset.jpg" style="width:400px " alt="Sunset of La Jolla"></th>
+                    <th><img src="Media/sunset2.jpg" style="width:400px" alt="Sunset of La Jolla"></th>
+                </tr>
+            </table>
         </picture>
+    </section>
+
+    <br><br>
+
+    <section id="socialMedia">
+        <h2>Social Media Account</h2>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:orange">
+                <col style="background-color:yellow">
+            </colgroup>
+            <caption>Account at each platform</caption>
+            <thead>
+            <tr>
+                <th>Platform</th>
+                <th>Account</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Instagram</td>
+                <td>@Great_Shuhang</td>
+            </tr>
+            <tr>
+                <td>Wechat</td>
+                <td>Great_Shuhang</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Facebook</td>
+                <td>xizhilang0805</td>
+            </tr>
+            </tfoot>
+        </table>
     </section>
 </main>
 
 <footer>
+    <hr>
     <p>Copyright @Great_Shuhang</p>
 </footer>
 </body>

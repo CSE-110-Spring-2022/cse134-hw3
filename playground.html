@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playground</title>
+    <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+</head>
+<body>
+    <header>
+    <!-- Shuhang's Logo -->
+    <a href="index.html">
+      <img src="Media/logo.png" width="50" height="50" alt="Shuhang's Logo">
+    </a>
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="playground.html">Playground</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+        <h1>Here is some fun fact about me</h1>
+        <hr>
+        <h2>Blue and orange are my favorite color</h2>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(0, 0, 50, 50);
+        </script>
+        <br>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="orange" stroke-width="4" fill="orange" />
+        </svg>
+
+        <hr>
+
+        <h2>Sound of bird is my favorite voice</h2>
+        <audio controls>
+            <source src="Media/bird.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <b>The sound of bird can help me live in peace</b>
+
+        <hr>
+
+        <h2>Hello World is the first program I learn</h2>
+        <code>int main(){ cout << "Hello World!"; return 0;}</code>
+        <br>
+        <strong>It is pretty important to me because that's the first time I learn how to code and start to love programming</strong>
+
+        <hr>
+
+        <h2>My coding history</h2>
+        <p>I learn C++ and python in the community college and that's when my hobby starts.</p>
+        <aside>
+            <p>After I transfer to UCSD, I take <i>CSE 15L, 21, 100, 101, 105, 140 and 140L</i>. These classes strengthen my knowledge of programming.</p>
+            <p>In this summer, I take <em>CSE 134B, 141, 141L</em>, which I think I would have a busy summer.</p>
+        </aside>
+
+        <hr>
+
+        <h2>My career plan</h2>
+        <pre>
+            After the four-year university, I plan to apply for the Master Degree and research on the Hyperdimensional Computing
+            If it is possible, I also want to learn something in hardware because I think the combination of software and hardware
+            would be so powerful. After I graduate, I am going to be robotic engineers and develop robots which would make human
+            life easier.
+        </pre>
+
+        <hr>
+
+        <h2>Have you visited UCSD before?</h2>
+        <iframe src="https://www.ucsd.edu" title="UCSD" width="1000px" height="600px"></iframe>
+
+        <hr>
+
+        <h2>My favorite food</h2>
+        <ol>
+            <li>Milk Tea</li>
+            <li>Bok Choi</li>
+            <li>Salmon</li>
+            <li>Fried Chicken</li>
+            <li>Chicken Nugget</li>
+        </ol>
+
+        <template>
+            <h2>Secret</h2>
+            <p>I love Professor Powell's Class</p>
+        </template>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Copyright @Great_Shuhang</p>
+    </footer>
+</body>
+</html>
