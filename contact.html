@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <title>Contact Shuhang</title>
     <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
 </head>
 <body>
-<header>
-    <!-- Shuhang's Logo -->
-    <a href="index.html">
-        <img src="Media/logo.png" width="50" height="50" alt="Shuhang's Logo">
-    </a>
+<header class="site-header">
+    <div class="header-container">
+        <a href="index.html" title="Back to homepage">
+            <img src="Media/logo.png" height=100vh alt="Shuhang's Logo" id="logo">
+        </a>
+        <!-- Navbar -->
+        <nav id="header-nav">
+            <!-- Shuhang's Logo -->
 
-    <!-- Navbar -->
-    <nav id="">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="playground.html">Playground</a></li>
-        </ul>
-    </nav>
+            <ul class="header-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+    </div>
 </header>
 <main>
     <h1> Contact Shuhang</h1>
@@ -78,7 +96,7 @@
 
             <br><br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="alert('Thank you! I am looking forward to talking with you soon.')" >Submit</button>
 
             <br><br>
             <details>
@@ -92,19 +110,6 @@
     </form>
 
     <br><br>
-
-    <form action="/action_page.php" method="get">
-        <label for="language">Choose your preferred programming language and see my related programming experience:</label>
-        <input list="languages" name="language" id="language">
-        <datalist id="languages">
-            <option value="C++">
-            <option value="Python">
-            <option value="Java">
-            <option value="Html">
-            <option value="JavaScript">
-        </datalist>
-        <button type="button" onclick="alert('My projects are hidden from the public')">Search</button>
-    </form>
 </main>
 <footer>
     <hr>

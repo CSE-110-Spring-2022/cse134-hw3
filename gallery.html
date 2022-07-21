@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Gallery</title>
     <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <link rel="stylesheet" href="gallery_stylesheet.css">
     <style>
         table, th, td {
             border: 1px solid black;
@@ -11,34 +14,54 @@
     </style>
 </head>
 <body>
-<header>
-    <!-- Shuhang's Logo -->
-    <a href="index.html">
-        <img src="Media/logo.png" width="50" height="50" alt="Shuhang's Logo">
-    </a>
+<header class="site-header" id="gallery">
+    <div class="header-container">
+        <a href="index.html" title="Back to homepage">
+            <img src="Media/logo.png" height=100vh alt="Shuhang's Logo" id="logo">
+        </a>
+        <!-- Navbar -->
+        <nav id="header-nav">
+            <!-- Shuhang's Logo -->
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="playground.html">Playground</a></li>
-        </ul>
-    </nav>
+            <ul class="header-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+    </div>
+    <div id="gallery_intro">
+        <h1>Welcome to Shuhang' Gallery</h1>
+        <h2>Check the pictures and video I take</h2>
+    </div>
 </header>
 <main>
-    <h1>Welcome to Shuhang' Gallery</h1>
-    <b>Here is a quick navigation of the gallery page</b>
-    <ul>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#pitcure">Picture</a></li>
-        <li><a href="#socialMedia">Social Media Account</a></li>
-    </ul>
+    <div class="sideBar">
+        <b>Here is a quick navigation of the gallery page</b>
+        <ul>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#socialMedia">Social Media Account</a></li>
+        </ul>
+    </div>
 
     <br>
-    <hr>
 
     <section id="video">
         <h2>Please watch the video I made with my DJI Drone</h2>
@@ -55,19 +78,16 @@
     <section id="picture">
         <!-- Pictures -->
         <h2>Here are the pictures I take</h2>
-        <picture>
-            <source media="(min-width:650px)" srcset="Media/DSCF4438.jpg">
-            <source media="(min-width:465px)" srcset="Media/DSCF4441.jpg">
-            <img src="Media/DSCF4448.jpg" alt="Sky" style="width:400px;">
-        </picture>
-            <img src="Media/bridge.jpg" style="width:400px" alt="Ellen Browning Scripps Memorial Pier">
-            <img src="Media/cars.jpg" style="width:400px" alt="Night of La Jolla Freeway">
-            <img src="Media/cars2.jpg" style="width:400px" alt="Night of La Jolla Freeway from a Hole">
-            <img src="Media/shore.jpg" style="width:400px" alt="La Jolla Shore">
-            <img src="Media/shore2.jpg" style="width:400px" alt="La Jolla Shore">
-            <img src="Media/shore3.jpg" style="width:400px" alt="La Jolla Shore">
-            <img src="Media/sunset.jpg" style="width:400px " alt="Sunset of La Jolla">
-            <img src="Media/sunset2.jpg" style="width:400px" alt="Sunset of La Jolla">
+        <div class="flex-container">
+            <img src="Media/bridge.jpg" style="width:400px" alt="Ellen Browning Scripps Memorial Pier" class="flex-item">
+            <img src="Media/cars.jpg" style="width:400px" alt="Night of La Jolla Freeway" class="flex-item">
+            <img src="Media/cars2.jpg" style="width:400px" alt="Night of La Jolla Freeway from a Hole" class="flex-item">
+            <img src="Media/shore.jpg" style="width:400px" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/shore2.jpg" style="width:400px" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/shore3.jpg" style="width:400px" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/sunset.jpg" style="width:400px " alt="Sunset of La Jolla" class="flex-item">
+            <img src="Media/sunset2.jpg" style="width:400px" alt="Sunset of La Jolla" class="flex-item">
+        </div>
     </section>
 
     <br><br>
@@ -103,26 +123,6 @@
 
     </section>
 
-    <br><br>
-
-    <section id="appointment">
-        <h2>Make an appointment with me and leave great memory</h2>
-        <table>
-            <caption>Price per format</caption>
-            <tr>
-                <th>Format</th>
-                <th>Price per hour</th>
-            </tr>
-            <tr>
-                <td>Video</td>
-                <td>$40</td>
-            </tr>
-            <tr>
-                <td>Picture</td>
-                <td>$50</td>
-            </tr>
-        </table>
-    </section>
 </main>
 
 <footer>

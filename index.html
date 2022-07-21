@@ -3,75 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Shuhang Xu's Personal Website</title>
-    <style>
-        .site-header {
-            background-image: url("Media/background.jpg");
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .site-header .header-container {
-            ~position: fixed;
-            height: 15vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background: transparent;
-        }
-
-        .header-nav {
-            display: inline;
-            flex-direction: row;
-        }
-
-        .header-nav ul {
-            margin: 1em 0.5em;
-            text-align: center;
-        }
-
-        .header-nav li {
-            display: inline;
-        }
-
-        .header-nav a {
-            display: inline-block;
-            padding: 1em 1em;
-            font-size: x-large;
-            color: white;
-            text-decoration: none;
-        }
-
-        .intro {
-            position: relative;
-            text-align: center;
-            color: white;
-            height: 80vh;
-        }
-        .intro > ul > li > a{
-            color: white;
-            font-size: x-large;
-        }
-        .sideBar{
-            position: fixed;
-            color: white;
-            background: cornflowerblue;
-            width: 10vw;
-            top: 30vh;
-            left: 85vw;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <link rel="stylesheet" href="mainPageIntro.css">
     <link rel="icon" type="image/x-icon" href="Media/logo.ico">
 </head>
 <body>
 <header class="site-header" id ="top">
     <div class="header-container">
         <a href="index.html" title="Back to homepage">
-            <img src="Media/logo.png" width="100" height="100" alt="Shuhang's Logo">
+            <img src="Media/logo.png" height=100vh alt="Shuhang's Logo" id="logo">
         </a>
         <!-- Navbar -->
-        <nav class="header-nav">
+        <nav id="header-nav">
             <!-- Shuhang's Logo -->
 
             <ul class="header-nav-list">
@@ -79,13 +23,27 @@
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="playground.html">Playground</a></li>
             </ul>
         </nav>
 
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+
     </div>
     <div class="intro">
-        <h1 style="font-size: xxx-large">Welcome to Shuhang's Page</h1>
+        <h1 style="font-size: xxx-large" class = "animated-head">Welcome to Shuhang's Page</h1>
         <h2 style="font-size: xx-large">Computer Science Student @UCSD</h2>
         <figure>
             <img src="Media/pikachu.jpg" alt="Pikachu" style="height: 40vh">
@@ -97,7 +55,7 @@
 
 <main>
     <div class="sideBar">
-        <b style="">Here is a quick navigation of the home page</b>
+        <b>Here is a quick navigation of the home page</b>
         <ul>
             <li><a href="#top">Top</a></li>
             <li><a href="#education">Education History</a></li>
