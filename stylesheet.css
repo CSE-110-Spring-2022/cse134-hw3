@@ -63,3 +63,16 @@
     top: 30vh;
     left: 85vw;
 }
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background: steelblue;
+}
+
+main{
+    color: white;
+}
