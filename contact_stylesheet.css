@@ -19,3 +19,8 @@
 main{
     location: center;
 }
+
+.formfield{
+    display: flex;
+    flex-wrap: nowrap;
+}

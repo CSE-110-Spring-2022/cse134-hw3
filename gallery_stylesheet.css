@@ -43,6 +43,10 @@
     width: 60%;
 }
 
-#video, #picture{
-    font-size: xx-large;
+#video, #picture, #socialMedia{
+    font-size: 1.5rem;
+}
+
+#video p, #socialMedia > table{
+    font-size: 0.8em;
 }
